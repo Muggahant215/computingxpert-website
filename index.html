@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ComputingXpert — IT Consulting</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav-transparent">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Computing<span>Xpert</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-nav">Get a Free Consultation</a>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SLIDESHOW -->
+  <section class="hero">
+
+    <!-- Background slides -->
+    <div class="hero-slides">
+      <div class="slide active kb-1" style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide kb-2"        style="background-image:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide kb-3"        style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide kb-4"        style="background-image:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="slide kb-5"        style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80')"></div>
+    </div>
+
+    <!-- Dark gradient overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Content -->
+    <div class="hero-content">
+      <div class="hero-badge">IT Solutions for Small &amp; Mid-Size Business</div>
+      <h1>Enterprise-Grade IT for <span class="accent-light">Small &amp; Mid-Size Business</span></h1>
+      <p class="hero-sub">ComputingXpert gives small and mid-size businesses access to the same expert IT support that large companies rely on — networking, cloud, and cybersecurity — at a price that makes sense for you.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn-primary">Get a Free Consultation</a>
+        <a href="services.html" class="btn-ghost-light">Explore Services</a>
+      </div>
+    </div>
+
+    <!-- Slide indicator dots -->
+    <div class="slide-dots">
+      <button class="dot active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
+      <button class="dot"        onclick="goToSlide(1)" aria-label="Slide 2"></button>
+      <button class="dot"        onclick="goToSlide(2)" aria-label="Slide 3"></button>
+      <button class="dot"        onclick="goToSlide(3)" aria-label="Slide 4"></button>
+      <button class="dot"        onclick="goToSlide(4)" aria-label="Slide 5"></button>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Core Service Areas</span></div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Client-Focused</span></div>
+    <div class="stat"><span class="stat-num">1</span><span class="stat-label">Trusted Partner</span></div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What We Do</h2>
+        <p>End-to-end IT services for small and mid-sized businesses</p>
+      </div>
+      <div class="card-grid">
+        <a href="services.html#managed" class="card">
+          <div class="card-icon">&#128421;</div>
+          <h3>Managed IT</h3>
+          <p>PC deployment, Microsoft 365 administration, and proactive network monitoring to keep your business running.</p>
+          <span class="card-link">Learn more &rarr;</span>
+        </a>
+        <a href="services.html#network" class="card">
+          <div class="card-icon">&#128225;</div>
+          <h3>Network Services</h3>
+          <p>Firewall configuration (Meraki, Fortinet, SonicWall), Wi-Fi design, VLAN setup, VPN, and internet failover solutions.</p>
+          <span class="card-link">Learn more &rarr;</span>
+        </a>
+        <a href="services.html#cloud" class="card">
+          <div class="card-icon">&#9729;</div>
+          <h3>Cloud Services</h3>
+          <p>Microsoft 365 and Google Workspace migrations, SharePoint, OneDrive, Azure AD/Entra ID, and cloud backup solutions.</p>
+          <span class="card-link">Learn more &rarr;</span>
+        </a>
+        <a href="services.html#cyber" class="card">
+          <div class="card-icon">&#128274;</div>
+          <h3>Cybersecurity</h3>
+          <p>MFA, email security, security awareness training, vulnerability assessments, EDR, and disaster recovery planning.</p>
+          <span class="card-link">Learn more &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE SERVE -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Built for <span style="color:var(--accent)">Small &amp; Mid-Size Business</span></h2>
+        <p>Most IT companies focus on enterprise clients. We're built for teams like yours.</p>
+      </div>
+      <div class="serve-grid">
+        <div class="serve-card">
+          <div class="serve-icon">&#127981;</div>
+          <h4>Small &amp; Mid-Size Teams</h4>
+          <p>Whether you have 2 employees or 200, we right-size our solutions to your actual needs — no bloated contracts or unnecessary complexity.</p>
+        </div>
+        <div class="serve-card">
+          <div class="serve-icon">&#128200;</div>
+          <h4>Budget-Conscious Owners</h4>
+          <p>You shouldn't need a Fortune 500 budget to have reliable, secure IT. We deliver enterprise-quality work that small businesses can actually afford.</p>
+        </div>
+        <div class="serve-card">
+          <div class="serve-icon">&#9201;</div>
+          <h4>Businesses Without an IT Team</h4>
+          <p>No internal IT department? No problem. ComputingXpert becomes your IT team — handling everything from day-to-day support to long-term planning.</p>
+        </div>
+        <div class="serve-card">
+          <div class="serve-icon">&#128272;</div>
+          <h4>Security-Conscious Owners</h4>
+          <p>Small businesses are prime targets for cyberattacks. We put the right protections in place so you can operate confidently, without the risk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why ComputingXpert?</h2>
+        <p>We treat your business like our own</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">&#9989;</div>
+          <h4>No Long-Term Lock-In</h4>
+          <p>We earn your business every month. No pushy contracts — just reliable service that keeps you coming back.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#9989;</div>
+          <h4>One Point of Contact</h4>
+          <p>You deal directly with Anthony — not a call center or rotating help desk agents. Fast, personal, consistent.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#9989;</div>
+          <h4>Security-First Mindset</h4>
+          <p>Every recommendation we make has security baked in — from MFA and endpoint protection to backup and disaster recovery.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#9989;</div>
+          <h4>Plain Language, Always</h4>
+          <p>We explain everything in terms that make sense to you — no jargon, no surprises, no upselling complexity you don't need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Your business deserves great IT.</h2>
+      <p>Whether you're a team of 5 or 150, let's talk about where you are and where you want to be. Free consultation — no commitment, no jargon.</p>
+      <a href="contact.html" class="btn-primary">Contact Anthony Today</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo-text">Computing<span>Xpert</span></span>
+        <p>Expert IT consulting for businesses that demand reliability, security, and performance.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <p>&#9993; anthony.greenjr@gmail.com</p>
+        <a href="contact.html" class="btn-primary" style="margin-top:1rem;display:inline-block;">Free Consultation</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ComputingXpert. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ── Nav: turn solid on scroll ──
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav-solid', window.scrollY > 60);
+    });
+
+    // ── Mobile menu ──
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    // ── Slideshow ──
+    const slides = document.querySelectorAll('.slide');
+    const dots   = document.querySelectorAll('.dot');
+    let current  = 0;
+    let timer;
+
+    function goToSlide(n) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+      resetTimer();
+    }
+
+    function nextSlide() { goToSlide(current + 1); }
+
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(nextSlide, 6000);
+    }
+
+    resetTimer();
+  </script>
+</body>
+</html>
